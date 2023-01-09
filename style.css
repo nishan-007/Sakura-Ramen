@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+
+.navbar-container {
+    background: url(img/bgr1.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-container .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar-container .heading span {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.navbar-container .heading p {
+    color: white;
+    font-size: 0.7rem;
+}
+
+.navbar-container .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .icon {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar-container .navbar .navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.navbar .navbar-links .mobile-number img {
+    width: 16px;
+    height: 16px;
+}
+
+.navbar .navbar-links .mobile-number {
+    background-color: rgb(247, 75, 75);
+    padding: 10px 15px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.navbar .navbar-links a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar .navbar-links a.links:hover {
+    text-decoration: underline;
+    transition-timing-function: ease-out;
+    transition: 0.4s;
+    transform: scale(1.3);
+}
+
+.navbar-links .mobile-number:hover {
+    background-color: red;
+    transition: 0.4s;
+    transition-timing-function: ease-out;
+    transform: scale(1.3);
+}
+
+.upper-middle {
+    margin: 75px 0;
+}
+
+.upper-middle h1 {
+    padding-bottom: 40px;
+    text-align: center;
+    color: #8B0000;
+}
+
+.upper-middle h3 {
+    font-family: 'Economica', sans-serif;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-align: center;
+}
+
+.upper-middle .order-products {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.upper-middle .order-products .each-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.upper-middle .order-products .each-item img {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 0px;
+}
+
+.our-menu {
+    background-image: url(img/background.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Economica', sans-serif;
+    padding: 10px;
+    margin: 75px 0;
+}
+
+.our-menu p {
+    padding-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #8B0000;
+
+}
+
+.our-menu .every-dish {
+    margin: 35px 0;
+    text-transform: capitalize;
+}
+
+.our-menu .every-dish img {
+    width: 180px;
+    height: 180px;
+}
+
+.our-menu .every-dish {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.our-menu .every-dish div h2 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.our-menu .every-dish div table {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: small;
+    color: gray;
+}
+
+.our-menu .every-dish div table td {
+    padding-right: 60px;
+}
+
+.location {
+    margin-bottom: 75px;
+}
+
+.location h1 {
+    color: #8B0000;
+}
+
+.location h1,
+p {
+    text-align: center;
+}
+
+.location p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.location p img {
+    height: 16px;
+    object-fit: cover;
+}
+
+.location iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px;
+}
+
+.footer img {
+    height: 35px;
+    /* margin-left: 25px; */
+}
+
+.footer .social-media img {
+    width: 35px;
+    height: 35px;
+    margin-right: 22px;
+}
+
+.footer .social-media img:hover {
+    transition-timing-function: ease-in;
+    transition: 0.4s;
+    transform: scale(1.3);
+}
+
+@media(max-width: 480px) {
+    .navbar-container .heading span {
+        font-size: 2.5rem;
+    }
+    .navbar-container .heading p {
+        font-size: 1rem;
+    }
+    .navbar .navbar-links a.links {
+        display: none;
+    }
+
+    /* How to order section */
+    .upper-middle {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .upper-middle h1 {
+        padding-top: 20px;
+    }
+
+    .upper-middle .order-products {
+        flex-direction: column;
+    }
+
+    .upper-middle .order-products .each-item {
+        margin-bottom: 25px;
+    }
+
+    .upper-middle .order-products .each-item img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 10px;
+    }
+
+    .upper-middle .order-products .each-item h3 {
+        font-size: 1.75rem;
+    }
+
+    /* Menu Section */
+    .our-menu {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .our-menu .every-dish {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .our-menu .every-dish.second-dish {
+        flex-direction: column-reverse;
+    }
+
+    .our-menu .every-dish div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .our-menu .every-dish img {
+        margin-bottom: 15px;
+    }
+
+    .our-menu .every-dish div table td {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .location {
+        margin-bottom: 25px;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 0;
+        padding-bottom: 25px;
+    }
+    .footer a {
+        padding-bottom: 20px;
+    }
+}
